@@ -49,60 +49,10 @@ export default function Intro() {
             <p className="code code-faint">Jupiter System / 2050</p>
           </div>
 
-          <div className="grid gap-10 px-5 py-8 sm:px-7 sm:py-10 lg:grid-cols-12 lg:px-9 lg:py-12">
-            <div className="lg:col-span-5">
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.2em] text-[var(--faint)]">
-                Creative Task Title
-              </p>
-              <h3 className="mt-4 max-w-[13ch] font-display text-[clamp(2rem,4.2vw,3.6rem)] font-semibold leading-[1.02] tracking-[-0.025em] text-[var(--fg)]">
-                Extraterrestrial Life on Jupiter&apos;s Icy Moons in 2050
-              </h3>
-
-            </div>
-
-            <div className="lg:col-span-6 lg:col-start-7">
-              <p className="max-w-[60ch] text-[clamp(1rem,1.3vw,1.12rem)] leading-relaxed text-[var(--muted)]">
-                Co-create with AI to develop a creative proposal for a five-minute
-                science-fiction short film about extraterrestrial life on
-                Jupiter’s icy moons.
-              </p>
-              <p className="mt-6 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                You may use bold imagination, but you must clearly distinguish
-                among the following three types of content:
-              </p>
-              <ol className="mt-4 grid gap-3 text-[var(--muted)]">
-                {[
-                  "Content based on existing scientific research;",
-                  "Scientifically plausible speculation;",
-                  "Fictional elements introduced for narrative purposes.",
-                ].map((item, index) => (
-                  <li key={item} className="flex items-start gap-3">
-                    <span className="font-mono text-[var(--amber)]">({index + 1})</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ol>
-              <div className="mt-8 border-l border-[var(--amber)] pl-5">
-                <p className="font-mono text-[0.68rem] uppercase tracking-[0.2em] text-[var(--amber)]">
-                  Scenario / 2050
-                </p>
-                <p className="mt-3 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  The story is set in the Jupiter system in 2050.
-                </p>
-                <p className="mt-4 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  Human probes or space missions are studying Jupiter and its icy
-                  moons. During a new exploration mission to the Jupiter system,
-                  researchers detect an anomalous signal.
-                </p>
-                <p className="mt-4 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  It may originate from energetic activity caused by interactions
-                  among Jupiter’s intense magnetic field, the solar wind, and
-                  material from its moons, or it may be related to potential
-                  biological activity in the subsurface ocean of one of Jupiter’s
-                  icy moons. . .
-                </p>
-              </div>
-            </div>
+          <div className="px-5 py-8 sm:px-7 sm:py-10 lg:px-9 lg:py-12">
+            <h3 className="max-w-[28ch] font-display text-[clamp(2rem,4.2vw,3.6rem)] font-semibold leading-[1.08] tracking-[-0.025em] text-[var(--fg)]">
+              Exploring Extraterrestrial Life in the Jupiter System in 2050
+            </h3>
           </div>
         </article>
       </Reveal>
