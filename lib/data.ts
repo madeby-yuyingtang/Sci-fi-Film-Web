@@ -64,7 +64,7 @@ export const GROUPS: Group[] = [
     title: "Research Team",
     code: "C",
     people: [
-      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://yuyingtang1999.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
+      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
       { name: "Qingyue Cai", role: "Collaborator", affiliation: "Renmin University of China", photo: "images/people/qingyue-cai.jpg?v=3" },
       { name: "Haotian Li", role: "Researcher, Microsoft Research Asia · Award-Winning Human-Centered AI Researcher", affiliation: "Microsoft Research Asia", link: "https://www.microsoft.com/en-us/research/people/haotianli/", photo: "images/people/haotian-li.jpg?v=6" },
       { name: "Jiaxiong Hu", role: "Postdoctoral Researcher in Human-Computer Interaction", affiliation: "The Hong Kong University of Science and Technology", link: "https://jiaxiong.notion.site/Jiaxiong-Hu-fdd7394b52f74ae78ab438aa93164c3d", photo: "images/people/jiaxiong-hu.jpg?v=6" },
@@ -81,7 +81,7 @@ export const GROUPS: Group[] = [
       suffix: ", the exhibition marks the first chapter of a global journey connecting science, art, emerging technologies, and creative imagination across cultures.",
     },
     people: [
-      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://yuyingtang1999.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
+      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
       { name: "Minghe Lan", role: "Design Director & Co-Curator", affiliation: "Central Academy of Fine Arts", photo: "images/people/minghe-lan.jpg?v=2" },
       { name: "Tianxiao Wang", role: "PhD Student, Technical Director & Co-Curator", affiliation: "Imperial College London", link: "https://www.tianxiao.wang/", photo: "images/people/tianxiao-wang.jpg?v=3" },
     ],
