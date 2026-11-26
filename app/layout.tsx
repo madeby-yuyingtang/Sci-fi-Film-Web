@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
-import { Archivo, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
+import { Archivo, IBM_Plex_Sans, IBM_Plex_Mono, Outfit } from "next/font/google";
 import "./globals.css";
+
+const hero = Outfit({ subsets: ["latin"], weight: ["700"], variable: "--font-hero", display: "swap" });
 
 const display = Archivo({
   subsets: ["latin"],
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
+    <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable} ${hero.variable}`}>
       <body>{children}</body>
     </html>
   );
