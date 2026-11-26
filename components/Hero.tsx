@@ -15,16 +15,14 @@ export default function Hero() {
               lineHeight: 1.15,
             }}
           >
-            Science × Art × AI Global Co-Creation Initiative
+            FUTURE CIVILIZATION
           </span>
         </div>
 
         <div className="mt-[clamp(0.333rem,0.667vh,0.5rem)]">
           <h1 className="display display-xl max-w-none" style={{ lineHeight: 0.9 }}>
-            Human–AI <span className="max-sm:hidden">Co-Creation</span>
-            <span className="hidden max-sm:inline"><br />Co-Creation</span><br />
-            for <span className="text-[var(--amber)]">Science Fiction</span><br />
-            Filmmaking
+            A global community of creators exploring{" "}
+            <span className="text-[var(--amber)]">Science × Art × AI</span>
           </h1>
           <p className="mt-6 max-w-[46ch] font-display text-[1rem] font-medium leading-snug text-[var(--muted)] sm:mt-8 sm:text-[1.4rem]">
             Imagining Future Worlds through Human–AI Co-Creation.
