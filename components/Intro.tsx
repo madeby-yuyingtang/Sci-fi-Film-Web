@@ -1,6 +1,7 @@
 "use client";
 
 import Reveal from "./Reveal";
+import Trailer from "./Trailer";
 
 export default function Intro() {
   return (
@@ -105,15 +106,7 @@ export default function Intro() {
               </p>
             </div>
 
-            <div className="mt-10 aspect-video w-full overflow-hidden border border-[var(--line)] bg-black">
-              <iframe
-                src="https://drive.google.com/file/d/1qGtTk4pQVEJorDjlt6ME3BRao3KrE0UV/preview"
-                title="AI FILMMATES · JUPITER 2050 — Official Trailer"
-                className="h-full w-full border-0"
-                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
+            <Trailer />
           </div>
         </article>
       </Reveal>
