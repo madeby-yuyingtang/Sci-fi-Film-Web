@@ -67,9 +67,9 @@ export default function Intro() {
         </div>
 
         <Reveal className="mt-9 flex flex-wrap gap-4 sm:mt-12">
-          <a href="#people" className="inline-flex min-h-12 items-center justify-center rounded-md border border-[var(--amber)] bg-[var(--amber)] px-6 py-4 font-mono text-sm font-medium text-[var(--bg)] transition-colors hover:bg-[var(--amber-bright)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--amber)]">
+          <button type="button" aria-disabled="true" className="inline-flex min-h-12 items-center justify-center rounded-md border border-[var(--amber)] bg-[var(--amber)] px-6 py-4 font-mono text-sm font-medium text-[var(--bg)] cursor-default focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--amber)]">
             JOIN OUR COMMUNITY
-          </a>
+          </button>
           <a href="#programs" className="inline-flex min-h-12 items-center justify-center rounded-md border border-[var(--amber)] px-6 py-4 font-mono text-sm font-medium text-[var(--amber)] transition-colors hover:bg-[var(--panel-2)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--amber)]">
             EXPLORE OUR PROGRAMS
           </a>
