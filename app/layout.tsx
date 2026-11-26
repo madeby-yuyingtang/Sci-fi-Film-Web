@@ -22,7 +22,7 @@ const mono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Human–AI Co-Creation for Science Fiction Filmmaking",
+  title: "FUTURE CIVILIZATION",
   description:
     "A research-led interdisciplinary workshop exploring how generative AI can support science fiction storytelling, filmmaking, and scientific inquiry. Create the Future. Tell the Story.",
 };
