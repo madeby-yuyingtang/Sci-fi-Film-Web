@@ -7,17 +7,28 @@ function Logo({ inst, featured }: { inst: Institution; featured: boolean }) {
   return (
     <figure className="flex h-full flex-col items-center justify-start text-center">
       <div className={`flex items-center justify-center px-2 ${featured ? "h-[88px]" : "h-[66px]"}`}>
+        {inst.name === "Carnegie Mellon University" ? (
+          <div className="flex w-[136px] max-w-full items-center gap-1.5 text-left text-[#b51b32]">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={inst.logo} alt="Carnegie Mellon University seal" className="h-12 w-12 shrink-0 object-contain mix-blend-multiply" />
+            <span className="font-serif text-[11px] font-bold leading-[1.15]">Carnegie<br />Mellon<br />University</span>
+          </div>
+        ) : (
+        <>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={inst.logo}
           alt={inst.name}
           className={`w-auto max-w-full object-contain ${featured ? "max-h-[84px]" : "max-h-[62px]"}`}
         />
+        </>
+        )}
       </div>
       <figcaption
         className={`mt-3 font-display leading-snug text-[#3a3020] ${
           featured ? "text-[0.82rem] font-semibold" : "text-[0.72rem] font-medium"
         }`}
+        style={inst.name === "Carnegie Mellon University" ? { color: "#b51b32" } : undefined}
       >
         {inst.name}
       </figcaption>

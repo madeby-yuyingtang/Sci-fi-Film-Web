@@ -137,7 +137,7 @@ export const INSTITUTIONS: Institution[] = [
   { name: "Tsinghua University", logo: "logos/tsinghua-c.png" },
   { name: "Peking University", logo: "logos/pku-official-wordmark.png" },
   { name: "Cornell Tech", logo: "logos/cornell-tech-v2.svg" },
-  { name: "Carnegie Mellon University", logo: "logos/cmu-v2.svg" },
+  { name: "Carnegie Mellon University", logo: "logos/cmu-seal.png" },
   { name: "Nanyang Technological University", logo: "logos/ntu-c.png" },
   { name: "The Central Academy of Drama", logo: "logos/cad-c.png" },
   { name: "Central Academy of Fine Arts", logo: "logos/cafa-c.png" },
