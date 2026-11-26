@@ -133,7 +133,7 @@ export const INSTITUTIONS: Institution[] = [
   { name: "University of the Arts London", logo: "logos/ual-c.png", featured: true },
   { name: "Microsoft Research Asia", logo: "logos/msra-c.png", featured: true },
   { name: "The University of Hong Kong", logo: "logos/hku-c.png", featured: true },
-  { name: "University of Cambridge", logo: "logos/cambridge.svg" },
+  { name: "University of Cambridge", logo: "logos/cambridge-v2.svg" },
   { name: "Tsinghua University", logo: "logos/tsinghua-c.png" },
   { name: "Peking University", logo: "logos/pku-official-wordmark.png" },
   { name: "Cornell Tech", logo: "logos/cornell-tech.svg" },
@@ -151,6 +151,6 @@ export const INSTITUTIONS: Institution[] = [
   { name: "Renmin University of China", logo: "logos/ruc-official-wordmark-transparent.png" },
   { name: "Beijing Normal University", logo: "logos/bnu-c.png" },
   { name: "Lingnan University", logo: "logos/lingnan-c.png" },
-  { name: "Shandong University", logo: "logos/sdu.svg" },
+  { name: "Shandong University", logo: "logos/sdu-v2.svg" },
   { name: "Shanghai Film Academy, Shanghai University", logo: "logos/shanghai-film-academy.png" },
 ];
