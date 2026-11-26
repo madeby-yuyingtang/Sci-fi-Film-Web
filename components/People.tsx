@@ -87,6 +87,11 @@ export default function People() {
                 <p className="mt-2 font-display text-lg text-[var(--fg)]">{g.venue}</p>
               </Reveal>
             )}
+            {g.eventTitle && (
+              <Reveal className="mb-5">
+                <h4 className="max-w-[48ch] font-display text-xl font-semibold leading-snug text-[var(--fg)] sm:text-2xl">{g.eventTitle}</h4>
+              </Reveal>
+            )}
             {g.description && (
               <Reveal>
                 <p className="lede mb-8">
@@ -96,7 +101,7 @@ export default function People() {
                 </p>
               </Reveal>
             )}
-            <div className={`grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 ${g.id === "research-committee" ? "lg:grid-cols-6" : g.id === "london-exhibition-team" ? "lg:grid-cols-4" : "lg:grid-cols-5"}`}>
+            <div className={`grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 ${g.id === "research-committee" ? "lg:grid-cols-6" : "lg:grid-cols-5"}`}>
               {g.people.map((p, i) => (
                 <Reveal key={p.name} delay={(i % 5) * 50}>
                   <Card p={p} />

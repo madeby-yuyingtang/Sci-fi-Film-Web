@@ -19,6 +19,7 @@ export interface Group {
   code: string; // dossier section code
   eventDate?: string;
   venue?: string;
+  eventTitle?: string;
   description?: {
     prefix: string;
     emphasis: string;
@@ -91,6 +92,30 @@ export const GROUPS: Group[] = [
       { name: "Minghe Lan", role: "Symposium Visual Designer", affiliation: "Central Academy of Fine Arts", photo: "images/people/minghe-lan.jpg?v=2" },
       { name: "Tianxiao Wang", role: "Symposium Technical Lead · PhD Student", affiliation: "Imperial College London", link: "https://www.tianxiao.wang/", photo: "images/people/tianxiao-wang.jpg?v=3" },
       { name: "Qingyuan Xue", role: "Content Production Lead · AI Film Director & Award-Winning Filmmaker", affiliation: "Hong Kong Baptist University\nThe University of Hong Kong", photo: "images/people/qingyuan-xue-amber-v3.webp" },
+    ],
+  },
+
+  {
+    id: "chi-2027-meetup-team",
+    title: "CHI 2027 MEET-UP TEAM",
+    code: "E",
+    eventDate: "10–14 May 2027 · Pittsburgh, USA",
+    venue: "ACM CHI Conference on Human Factors in Computing Systems (CHI 2027)",
+    eventTitle: "The Future of Storytelling: Human–AI Co-Creation and Reflection Across Media",
+    description: {
+      prefix: "Bringing together an international community of researchers and creative practitioners, the Meet-Up explores the future of human–AI co-creation across writing, filmmaking, games, performance, visual art, and immersive media. It fosters interdisciplinary dialogue, critical reflection, and new research collaborations across creative practices and technologies.",
+      emphasis: "",
+      suffix: "",
+    },
+    people: [
+      { name: "Yuying Tang", role: "Meet-Up Lead Organizer · Human–AI Co-Creation Researcher", affiliation: "Imperial College London\nUniversity of the Arts London\nThe Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
+      { name: "Dongyijie Pan", role: "Meet-Up Organizer", affiliation: "The Hong Kong University of Science and Technology (Guangzhou)" },
+      { name: "Howard Han", role: "Meet-Up Organizer", affiliation: "Carnegie Mellon University" },
+      { name: "Piotr Mirowski", role: "Meet-Up Organizer", affiliation: "Goldsmiths, University of London" },
+      { name: "Jian Zhao", role: "Meet-Up Organizer", affiliation: "University of Waterloo" },
+      { name: "Nick Bryan-Kinns", role: "Meet-Up Organizer", affiliation: "University of the Arts London" },
+      { name: "Max Kreminski", role: "Meet-Up Organizer", affiliation: "Cornell Tech" },
+      { name: "Pan Hui", role: "Meet-Up Organizer", affiliation: "The Hong Kong University of Science and Technology", link: "https://panhui.people.ust.hk/", photo: "images/people/pan-hui.jpg?v=8" },
     ],
   },
 ];
