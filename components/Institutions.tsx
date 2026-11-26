@@ -66,10 +66,9 @@ export default function Institutions() {
 
       <Reveal className="mt-12 border-t border-[var(--line)] pt-10 sm:mt-16 sm:pt-12">
         <h3 className="font-display text-xl font-semibold text-[var(--fg)] sm:text-2xl">Technology Sponsorship Partner</h3>
-        <div className="mt-6 inline-flex items-center gap-5 rounded-xl bg-[#ece1c2] px-8 py-6">
+        <div className="mt-6 inline-flex max-w-full items-center rounded-xl border border-[var(--line)] bg-[var(--panel)] px-6 py-5 sm:px-8 sm:py-6">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="logos/tapnow.png" alt="TapNow" className="h-20 w-20 object-contain mix-blend-multiply sm:h-24 sm:w-24" />
-          <span className="font-display text-3xl font-semibold tracking-tight text-[#3a3020]">TapNow</span>
+          <img src="logos/tapnow-full-transparent.png" alt="TapNow" className="h-auto w-[280px] max-w-full object-contain sm:w-[360px]" />
         </div>
       </Reveal>
     </section>
