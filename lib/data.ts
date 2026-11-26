@@ -114,7 +114,7 @@ export const GROUPS: Group[] = [
       { name: "Piotr Mirowski", role: "Meet-Up Organizer", affiliation: "Goldsmiths, University of London", link: "https://piotrmirowski.com/", photo: "images/people/piotr-mirowski-amber-v2.webp" },
       { name: "Jian Zhao", role: "Meet-Up Organizer", affiliation: "University of Waterloo", link: "https://www.jeffjianzhao.com/", photo: "images/people/jian-zhao-amber.webp" },
       { name: "Nick Bryan-Kinns", role: "Meet-Up Organizer", affiliation: "University of the Arts London", link: "https://nickbknickbk.github.io/", photo: "images/people/nick-bryan-kinns-amber.webp" },
-      { name: "Max Kreminski", role: "Meet-Up Organizer", affiliation: "Cornell Tech", link: "https://mkremins.github.io/", photo: "images/people/max-kreminski-amber.webp" },
+      { name: "Max Kreminski", role: "Meet-Up Organizer", affiliation: "Cornell Tech", link: "https://mkremins.github.io/", photo: "images/people/max-kreminski-amber-v2.webp" },
       { name: "Pan Hui", role: "Meet-Up Organizer", affiliation: "The Hong Kong University of Science and Technology", link: "https://panhui.people.ust.hk/", photo: "images/people/pan-hui.jpg?v=8" },
     ],
   },
