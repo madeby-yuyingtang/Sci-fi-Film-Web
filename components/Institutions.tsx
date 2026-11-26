@@ -34,11 +34,12 @@ export default function Institutions() {
       <div className="border-t border-[var(--line)] pt-3" />
 
       <Reveal className="mt-12">
-        <h2 className="h-sec max-w-[16ch]">Collaborating institutions</h2>
+        <h2 className="h-sec whitespace-nowrap">Our Global Community</h2>
         <p className="lede mt-5">
-          The workshop brings together collaborators from universities, research
-          organizations, and creative institutions across artificial intelligence,
-          science, film, media, art, and design.
+          Our community brings together researchers, industry professionals,
+          artists, and emerging creators from leading universities, research
+          organizations, and creative institutions worldwide, spanning artificial
+          intelligence, science, filmmaking, media, art, and design.
         </p>
       </Reveal>
 

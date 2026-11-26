@@ -24,6 +24,7 @@ function Card({ p }: { p: Person }) {
               alt={p.name}
               className="h-full w-full object-cover"
               style={{
+                filter: p.photoFilter,
                 objectPosition: p.photoPosition ?? "50% 50%",
                 transform: `scale(${p.photoScale ?? 1})`,
                 transformOrigin: p.photoOrigin ?? "50% 50%",
@@ -50,7 +51,7 @@ function Card({ p }: { p: Person }) {
         </NameTag>
         <p className="mt-1 text-[0.72rem] leading-snug text-[var(--muted)] sm:text-[0.8rem]">{p.role}</p>
         {p.affiliation && (
-          <p className="mt-1 font-mono text-[0.58rem] leading-snug tracking-[0.01em] text-[var(--amber)] sm:text-[0.64rem] sm:tracking-[0.02em]">
+          <p className="mt-1 whitespace-pre-line font-mono text-[0.58rem] leading-snug tracking-[0.01em] text-[var(--amber)] sm:text-[0.64rem] sm:tracking-[0.02em]">
             {p.affiliation}
           </p>
         )}
@@ -74,12 +75,18 @@ export default function People() {
 
       <div className="mt-12 space-y-12 sm:mt-16 sm:space-y-16">
         {GROUPS.map((g) => (
-          <div key={g.id}>
+          <div key={g.id} id={g.id} className="scroll-mt-24">
             <Reveal>
               <h3 className={`${g.description ? "mb-5" : "mb-8"} border-b border-[var(--line)] pb-3 font-display text-[1.05rem] font-semibold uppercase tracking-[0.04em] text-[var(--fg)]`}>
                 {g.title}
               </h3>
             </Reveal>
+            {g.eventDate && (
+              <Reveal className="mb-6">
+                <p className="font-mono text-sm text-[var(--amber)]">{g.eventDate}</p>
+                <p className="mt-2 font-display text-lg text-[var(--fg)]">{g.venue}</p>
+              </Reveal>
+            )}
             {g.description && (
               <Reveal>
                 <p className="lede mb-8">
@@ -89,7 +96,7 @@ export default function People() {
                 </p>
               </Reveal>
             )}
-            <div className="grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 lg:grid-cols-5">
+            <div className={`grid grid-cols-2 gap-x-4 gap-y-9 sm:grid-cols-3 sm:gap-x-6 sm:gap-y-10 ${g.id === "research-committee" ? "lg:grid-cols-6" : g.id === "london-exhibition-team" ? "lg:grid-cols-4" : "lg:grid-cols-5"}`}>
               {g.people.map((p, i) => (
                 <Reveal key={p.name} delay={(i % 5) * 50}>
                   <Card p={p} />

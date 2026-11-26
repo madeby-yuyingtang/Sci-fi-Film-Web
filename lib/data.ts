@@ -7,6 +7,7 @@ export interface Person {
   affiliation: string;
   link?: string;
   photo?: string; // relative path, e.g. "images/people/stanley-tong.jpg?v=6"
+  photoFilter?: string;
   photoScale?: number;
   photoPosition?: string;
   photoOrigin?: string;
@@ -16,6 +17,8 @@ export interface Group {
   id: string;
   title: string;
   code: string; // dossier section code
+  eventDate?: string;
+  venue?: string;
   description?: {
     prefix: string;
     emphasis: string;
@@ -56,6 +59,7 @@ export const GROUPS: Group[] = [
       { name: "Xiaojuan Ma", role: "Associate Professor of Computer Science · Program Director in AI and Entrepreneurship", affiliation: "The Hong Kong University of Science and Technology", link: "https://cse.hkust.edu.hk/admin/people/faculty/profile/mxj", photo: "images/people/xiaojuan-ma.jpg?v=6" },
       { name: "Sebastian Deterding", role: "Chair in Design Engineering, Pioneer in Gameful Design & Gamification & Computational Creativity", affiliation: "Imperial College London", link: "https://profiles.imperial.ac.uk/s.deterding", photo: "images/people/sebastian-deterding.jpg?v=6" },
       { name: "Rebecca Fiebrink", role: "Professor of Creative Computing, Pioneer in Interactive Machine Learning for Creative Practice", affiliation: "University of the Arts London", link: "https://www.arts.ac.uk/creative-computing-institute/people/rebecca-fiebrink", photo: "images/people/rebecca-fiebrink.jpg?v=6" },
+      { name: "Malak Sadek", role: "MPhil Deputy Director & Teaching Associate · Centre for Human-Inspired AI", affiliation: "University of Cambridge", link: "https://www.malaksadek.com/", photo: "images/people/malak-sadek.jpg", photoFilter: "grayscale(1) sepia(0.65)", photoPosition: "50% 40%" },
       { name: "Yulong Bian", role: "ACM China Rising Star Awardee · Executive Committee Member, ACM SIGCHI China", affiliation: "Nanyang Technological University", link: "https://ieeexplore.ieee.org/author/37085666170", photo: "images/people/yulong-bian.jpg?v=6" },
     ],
   },
@@ -64,7 +68,7 @@ export const GROUPS: Group[] = [
     title: "Research Team",
     code: "C",
     people: [
-      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
+      { name: "Yuying Tang", role: "Founder & Project Director · Human–AI Co-Creation Researcher", affiliation: "Imperial College London\nUniversity of the Arts London\nThe Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
       { name: "Qingyue Cai", role: "Collaborator", affiliation: "Renmin University of China", photo: "images/people/qingyue-cai.jpg?v=3" },
       { name: "Haotian Li", role: "Researcher, Microsoft Research Asia · Award-Winning Human-Centered AI Researcher", affiliation: "Microsoft Research Asia", link: "https://www.microsoft.com/en-us/research/people/haotianli/", photo: "images/people/haotian-li.jpg?v=6" },
       { name: "Jiaxiong Hu", role: "Postdoctoral Researcher in Human-Computer Interaction", affiliation: "The Hong Kong University of Science and Technology", link: "https://jiaxiong.notion.site/Jiaxiong-Hu-fdd7394b52f74ae78ab438aa93164c3d", photo: "images/people/jiaxiong-hu.jpg?v=6" },
@@ -73,17 +77,20 @@ export const GROUPS: Group[] = [
   },
   {
     id: "london-exhibition-team",
-    title: "London Exhibition Team",
+    title: "LONDON SYMPOSIUM TEAM",
+    eventDate: "8 January 2027 · London, UK",
+    venue: "Imperial College London",
     code: "D",
     description: {
-      prefix: "Launching in ",
-      emphasis: "London, UK",
-      suffix: ", the exhibition marks the first chapter of a global journey connecting science, art, emerging technologies, and creative imagination across cultures.",
+      prefix: "Bringing together leading voices from academia and industry, the London Symposium explores the future of storytelling and filmmaking at the intersection of science, art, and artificial intelligence, fostering interdisciplinary dialogue and international creative exchange.",
+      emphasis: "",
+      suffix: "",
     },
     people: [
-      { name: "Yuying Tang", role: "Founder & Project Director · PhD Candidate in Human-AI Co-Creation", affiliation: "The Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
-      { name: "Minghe Lan", role: "Design Director & Co-Curator", affiliation: "Central Academy of Fine Arts", photo: "images/people/minghe-lan.jpg?v=2" },
-      { name: "Tianxiao Wang", role: "PhD Student, Technical Director & Co-Curator", affiliation: "Imperial College London", link: "https://www.tianxiao.wang/", photo: "images/people/tianxiao-wang.jpg?v=3" },
+      { name: "Yuying Tang", role: "Symposium Founder & Chair · Human–AI Co-Creation Researcher", affiliation: "Imperial College London\nUniversity of the Arts London\nThe Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
+      { name: "Minghe Lan", role: "Symposium Visual Designer", affiliation: "Central Academy of Fine Arts", photo: "images/people/minghe-lan.jpg?v=2" },
+      { name: "Tianxiao Wang", role: "Symposium Technical Lead · PhD Student", affiliation: "Imperial College London", link: "https://www.tianxiao.wang/", photo: "images/people/tianxiao-wang.jpg?v=3" },
+      { name: "Qingyuan Xue", role: "Content Production Lead · AI Film Director & Award-Winning Filmmaker", affiliation: "Hong Kong Baptist University\nThe University of Hong Kong", photo: "images/people/qingyuan-xue.jpg", photoFilter: "grayscale(1) sepia(0.65)", photoPosition: "50% 35%" },
     ],
   },
 ];
