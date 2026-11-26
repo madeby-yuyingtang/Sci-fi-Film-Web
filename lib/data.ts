@@ -90,7 +90,7 @@ export const GROUPS: Group[] = [
       { name: "Yuying Tang", role: "Symposium Founder & Chair · Human–AI Co-Creation Researcher", affiliation: "Imperial College London\nUniversity of the Arts London\nThe Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
       { name: "Minghe Lan", role: "Symposium Visual Designer", affiliation: "Central Academy of Fine Arts", photo: "images/people/minghe-lan.jpg?v=2" },
       { name: "Tianxiao Wang", role: "Symposium Technical Lead · PhD Student", affiliation: "Imperial College London", link: "https://www.tianxiao.wang/", photo: "images/people/tianxiao-wang.jpg?v=3" },
-      { name: "Qingyuan Xue", role: "Content Production Lead · AI Film Director & Award-Winning Filmmaker", affiliation: "Hong Kong Baptist University\nThe University of Hong Kong", photo: "images/people/qingyuan-xue.jpg", photoFilter: "grayscale(1) sepia(0.65)", photoPosition: "50% 35%" },
+      { name: "Qingyuan Xue", role: "Content Production Lead · AI Film Director & Award-Winning Filmmaker", affiliation: "Hong Kong Baptist University\nThe University of Hong Kong", photo: "images/people/qingyuan-xue-amber.webp?v=2" },
     ],
   },
 ];
