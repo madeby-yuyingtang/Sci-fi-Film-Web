@@ -7,12 +7,77 @@ export default function Intro() {
     <section id="brief" className="section relative z-10 mx-auto max-w-[var(--maxw)] px-[var(--gutter)]">
       <div className="border-t border-[var(--line)] pt-3" />
 
-      <Reveal className="mt-12">
-        <h2 className="h-sec">SCIENCE · ART · AI</h2>
-      </Reveal>
+      <div className="mt-12">
+        <Reveal>
+          <p className="code">SCIENCE · ART · AI</p>
+          <h2 className="mt-6 font-display text-[clamp(2rem,4.2vw,3.6rem)] font-semibold leading-[1.08] tracking-[-0.025em]">
+            FUTURE CIVILIZATION
+          </h2>
+          <p className="mt-7 font-display text-[clamp(1.3rem,2.5vw,2rem)] leading-tight text-[var(--amber)]">
+            Bridging Academia and Creative Industries
+          </p>
+          <p className="mt-7 max-w-[90ch] text-[clamp(1rem,1.5vw,1.2rem)] leading-relaxed text-[var(--muted)]">
+            A global, research-led interdisciplinary initiative where scientific
+            discovery, artistic imagination, and artificial intelligence converge
+            to advance human–AI co-creation, creative innovation, and
+            interdisciplinary collaboration.
+          </p>
+        </Reveal>
+
+        <div className="mt-10 border-t border-[var(--line)] pt-9 sm:mt-12 sm:pt-12">
+          <Reveal>
+            <h3 className="font-display text-2xl font-semibold sm:text-3xl">What We Do</h3>
+          </Reveal>
+          <ol className="mt-6">
+            {[
+              {
+                title: "Connect Global Expertise",
+                description: "Bring together scientists, artists, filmmakers, AI and HCI researchers, and creative industry professionals, fostering collaboration across disciplines, sectors, and cultures.",
+              },
+              {
+                title: "Catalyze Creative Innovation",
+                description: "Curate annual flagship co-creation programs at the intersection of science, art, AI, and emerging media, transforming visionary ideas into original creative works.",
+              },
+              {
+                title: "Showcase Creative Excellence",
+                description: "Present exceptional interdisciplinary works on the international stage through curated exhibitions, film screenings, and cultural showcases.",
+              },
+              {
+                title: "Bridge Academia and Industry",
+                description: "Convene distinguished voices from academia and the creative industries through international symposia, expert-led workshops, thematic meet-ups, specialized courses, university lectures, and research exchanges.",
+              },
+              {
+                title: "Nurture Talent & Incubate Innovation",
+                description: "Empower promising creators and projects through expert mentorship, strategic industry connections, and opportunities for creative development, production, distribution, and commercialization.",
+              },
+            ].map((item, index) => (
+              <li key={item.title} className="border-b border-[var(--line)]">
+                <Reveal className="grid grid-cols-[2rem_1fr] gap-3 py-7 sm:grid-cols-[3rem_1fr] sm:gap-5 sm:py-9">
+                  <span className="pt-1 font-mono text-lg text-[var(--amber)]">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h4 className="font-display text-xl font-medium leading-snug sm:text-2xl">{item.title}</h4>
+                    <p className="mt-3 max-w-[90ch] leading-relaxed text-[var(--muted)]">{item.description}</p>
+                  </div>
+                </Reveal>
+              </li>
+            ))}
+          </ol>
+        </div>
+
+        <Reveal className="mt-9 flex flex-wrap gap-4 sm:mt-12">
+          <a href="#people" className="inline-flex min-h-12 items-center justify-center rounded-md border border-[var(--amber)] bg-[var(--amber)] px-6 py-4 font-mono text-sm font-medium text-[var(--bg)] transition-colors hover:bg-[var(--amber-bright)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--amber)]">
+            JOIN OUR COMMUNITY
+          </a>
+          <a href="#programs" className="inline-flex min-h-12 items-center justify-center rounded-md border border-[var(--amber)] px-6 py-4 font-mono text-sm font-medium text-[var(--amber)] transition-colors hover:bg-[var(--panel-2)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--amber)]">
+            EXPLORE OUR PROGRAMS
+          </a>
+        </Reveal>
+      </div>
 
       <Reveal delay={120} className="mt-16 lg:mt-24">
-        <article className="frame overflow-hidden bg-[var(--panel)]">
+        <article id="programs" className="frame scroll-mt-24 overflow-hidden bg-[var(--panel)]">
           <div className="border-b border-[var(--line)] px-5 py-4 sm:px-7 lg:px-9">
             <p className="code">2026–2027 · ANNUAL FLAGSHIP PROJECT</p>
           </div>
