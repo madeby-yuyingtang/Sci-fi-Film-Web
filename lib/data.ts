@@ -109,9 +109,9 @@ export const GROUPS: Group[] = [
     },
     people: [
       { name: "Yuying Tang", role: "Meet-Up Lead Organizer · Human–AI Co-Creation Researcher", affiliation: "Imperial College London\nUniversity of the Arts London\nThe Hong Kong University of Science and Technology", link: "https://madeby-yuyingtang.github.io/", photo: "images/people/yuying-tang.jpg?v=2" },
-      { name: "Dongyijie Pan", role: "Meet-Up Organizer", affiliation: "The Hong Kong University of Science and Technology (Guangzhou)", link: "https://arkxlab.github.io/profile/primo.html", photo: "images/people/dongyijie-pan-amber.webp" },
+      { name: "Dongyijie Pan", role: "Meet-Up Organizer", affiliation: "The Hong Kong University of Science and Technology (Guangzhou)", link: "https://primopan.github.io/about/", photo: "images/people/dongyijie-pan-amber-v2.webp" },
       { name: "Howard Han", role: "Meet-Up Organizer", affiliation: "Carnegie Mellon University", link: "https://howardhan.com/", photo: "images/people/howard-han-amber.webp" },
-      { name: "Piotr Mirowski", role: "Meet-Up Organizer", affiliation: "Goldsmiths, University of London", link: "https://piotrmirowski.com/", photo: "images/people/piotr-mirowski-amber.webp" },
+      { name: "Piotr Mirowski", role: "Meet-Up Organizer", affiliation: "Goldsmiths, University of London", link: "https://piotrmirowski.com/", photo: "images/people/piotr-mirowski-amber-v2.webp" },
       { name: "Jian Zhao", role: "Meet-Up Organizer", affiliation: "University of Waterloo", link: "https://www.jeffjianzhao.com/", photo: "images/people/jian-zhao-amber.webp" },
       { name: "Nick Bryan-Kinns", role: "Meet-Up Organizer", affiliation: "University of the Arts London", link: "https://nickbknickbk.github.io/", photo: "images/people/nick-bryan-kinns-amber.webp" },
       { name: "Max Kreminski", role: "Meet-Up Organizer", affiliation: "Cornell Tech", link: "https://mkremins.github.io/", photo: "images/people/max-kreminski-amber.webp" },
