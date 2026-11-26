@@ -28,7 +28,6 @@ function Logo({ inst, featured }: { inst: Institution; featured: boolean }) {
         className={`mt-3 font-display leading-snug text-[#3a3020] ${
           featured ? "text-[0.82rem] font-semibold" : "text-[0.72rem] font-medium"
         }`}
-        style={inst.name === "Carnegie Mellon University" ? { color: "#b51b32" } : undefined}
       >
         {inst.name}
       </figcaption>
