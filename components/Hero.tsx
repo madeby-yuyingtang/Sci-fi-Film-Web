@@ -1,6 +1,6 @@
 "use client";
 
-export default function Hero() {
+export default function Hero({ previewFont, previewWeight, previewStretch }: { previewFont?: string; previewWeight?: number; previewStretch?: string } = {}) {
   return (
     <section id="top" className="relative z-10 flex min-h-[100svh] flex-col justify-center px-[var(--gutter)] pb-8 pt-20 max-sm:pb-6 max-sm:pt-24">
       <div className="mx-auto w-full max-w-[var(--maxw)]">
@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
 
         <div className="mt-[clamp(0.333rem,0.667vh,0.5rem)]">
-          <h1 className="display display-xl max-w-none" style={{ lineHeight: 0.9, fontFamily: "var(--font-sans-stack)" }}>
+          <h1 className="display display-xl max-w-none" style={{ lineHeight: 0.9, fontFamily: previewFont ?? "var(--font-sans-stack)", fontWeight: previewWeight, fontStretch: previewStretch }}>
             A global community of creators exploring{" "}
             <span className="text-[var(--amber)]">Science × Art × AI</span>
           </h1>
