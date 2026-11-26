@@ -19,12 +19,17 @@ export default function Hero() {
           </span>
         </div>
 
-        <div className="mt-[clamp(0.333rem,0.667vh,0.5rem)]">
-          <h1 className="display display-xl max-w-none" style={{ lineHeight: 0.9 }}>
-            A global community of creators exploring{" "}
-            <span className="text-[var(--amber)]">Science × Art × AI</span>
+        <div className="mt-[clamp(2rem,5vh,4rem)]">
+          <h1 className="font-display font-medium tracking-[-0.035em]">
+            <span className="block text-[clamp(1.75rem,4.6vw,4rem)] leading-[1.14]">
+              <span className="block">A global community</span>
+              <span className="block">of creators exploring</span>
+            </span>
+            <span className="mt-3 block whitespace-nowrap text-[clamp(1.95rem,7.2vw,6.25rem)] leading-[1.08] tracking-[-0.045em] text-[var(--amber)] sm:mt-4">
+              Science × Art × AI
+            </span>
           </h1>
-          <p className="mt-6 max-w-[46ch] font-display text-[1rem] font-medium leading-snug text-[var(--muted)] sm:mt-8 sm:text-[1.4rem]">
+          <p className="mt-6 max-w-[46ch] font-sans text-[0.95rem] font-normal leading-relaxed text-[var(--muted)] sm:mt-8 sm:text-[1.1rem]">
             Imagining Future Worlds through Human–AI Co-Creation.
           </p>
         </div>
