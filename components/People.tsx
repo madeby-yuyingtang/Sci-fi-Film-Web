@@ -65,7 +65,7 @@ export default function People() {
       <div className="border-t border-[var(--line)] pt-3" />
 
       <Reveal className="mt-9 sm:mt-12">
-        <h2 className="h-sec max-w-[18ch]">The Minds Behind the Initiative</h2>
+        <h2 className="h-sec whitespace-nowrap" style={{ fontSize: "clamp(1rem, 3.2vw, 2.5rem)" }}>The Minds Behind the Initiative</h2>
         <p className="lede mt-5">
           An interdisciplinary community spanning artificial intelligence, science,
           film, media, art, and design.

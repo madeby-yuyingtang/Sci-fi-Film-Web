@@ -27,7 +27,7 @@ export interface Group {
 export const GROUPS: Group[] = [
   {
     id: "advisory-panel",
-    title: "International Advisory & Review Panel",
+    title: "International Advisory & Jury Panel",
     code: "A",
     people: [
       { name: "Stanley Tong", role: "Internationally Acclaimed Film Director, Producer & Action Choreographer · Hong Kong Film Award–Winning Filmmaker", affiliation: "", link: "https://en.wikipedia.org/wiki/Stanley_Tong", photo: "images/people/stanley-tong-2026.webp?v=10", photoPosition: "50% 48%" },

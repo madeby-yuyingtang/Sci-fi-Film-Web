@@ -13,42 +13,41 @@ export default function Intro() {
 
       <Reveal delay={120} className="mt-16 lg:mt-24">
         <article className="frame overflow-hidden bg-[var(--panel)]">
-          <div className="flex flex-wrap items-center justify-between gap-3 border-b border-[var(--line)] px-5 py-4 sm:px-7 lg:px-9">
-            <p className="code">Creative Task</p>
-            <p className="code code-faint">Jupiter System / 2050</p>
+          <div className="border-b border-[var(--line)] px-5 py-4 sm:px-7 lg:px-9">
+            <p className="code">2026–2027 · ANNUAL FLAGSHIP PROJECT</p>
           </div>
 
-          <div className="grid gap-10 px-5 py-8 sm:px-7 sm:py-10 lg:grid-cols-12 lg:px-9 lg:py-12">
-            <div className="lg:col-span-5">
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.2em] text-[var(--faint)]">
-                Creative Task Title
+          <div className="px-5 py-8 sm:px-7 sm:py-10 lg:px-9 lg:py-12">
+            <h3 className="font-display text-[clamp(2rem,4.2vw,3.6rem)] font-semibold leading-[1.08] tracking-[-0.025em] text-[var(--fg)]">
+              AI FILMMATES · JUPITER 2050
+            </h3>
+            <p className="mt-5 font-display text-[clamp(1rem,1.6vw,1.35rem)] text-[var(--amber)]">
+              Human–AI Sci-Fi Filmmaking · Global Co-Creation
+            </p>
+            <p className="lede mt-6 max-w-[80ch]">
+              Bringing together science, cinema, and artificial intelligence, our
+              2026–2027 flagship project invites creators worldwide to envision
+              possible futures through human–AI co-creation.
+            </p>
+
+            <div className="mt-10 border-l border-[var(--amber)] pl-5">
+              <h4 className="code">THE CREATIVE BRIEF</h4>
+              <p className="mt-4 italic text-[var(--fg)]">Jupiter System, 2050</p>
+              <p className="mt-4 max-w-[80ch] leading-relaxed text-[var(--muted)]">
+                Humanity is exploring Jupiter and its icy moons. During a new
+                mission to the Jovian system, researchers detect an anomalous
+                signal...What unfolds next is yet to be imagined.
               </p>
-              <h3 className="mt-4 max-w-[13ch] font-display text-[clamp(2rem,4.2vw,3.6rem)] font-semibold leading-[1.02] tracking-[-0.025em] text-[var(--fg)]">
-                Exploring Extraterrestrial Life in the Jupiter System in 2050
-              </h3>
             </div>
 
-            <div className="lg:col-span-6 lg:col-start-7">
-              <div className="border-l border-[var(--amber)] pl-5">
-                <p className="font-mono text-[0.68rem] uppercase tracking-[0.2em] text-[var(--amber)]">
-                  Scenario / 2050
-                </p>
-                <p className="mt-3 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  The story is set in the Jupiter system in 2050.
-                </p>
-                <p className="mt-4 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  Human probes or space missions are studying Jupiter and its icy
-                  moons. During a new exploration mission to the Jupiter system,
-                  researchers detect an anomalous signal.
-                </p>
-                <p className="mt-4 max-w-[60ch] leading-relaxed text-[var(--muted)]">
-                  It may originate from energetic activity caused by interactions
-                  among Jupiter’s intense magnetic field, the solar wind, and
-                  material from its moons, or it may be related to potential
-                  biological activity in the subsurface ocean of one of Jupiter’s
-                  icy moons. . .
-                </p>
-              </div>
+            <div className="mt-10 aspect-video w-full overflow-hidden border border-[var(--line)] bg-black">
+              <iframe
+                src="https://drive.google.com/file/d/1qGtTk4pQVEJorDjlt6ME3BRao3KrE0UV/preview"
+                title="AI FILMMATES · JUPITER 2050 — Official Trailer"
+                className="h-full w-full border-0"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </article>
