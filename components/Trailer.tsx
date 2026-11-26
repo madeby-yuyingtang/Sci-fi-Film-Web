@@ -24,7 +24,7 @@ export default function Trailer() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="images/jupiter-2050-trailer-poster.png"
+            src="images/jupiter-2050-trailer-poster-v2.png"
             alt="Jupiter’s horizon — AI FILMMATES · JUPITER 2050 trailer cover"
             className="h-full w-full object-contain"
           />

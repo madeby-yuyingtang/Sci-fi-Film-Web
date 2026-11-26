@@ -1,8 +1,8 @@
 import sharp from "sharp";
 
-const [sourcePath, outputPath, subjectHeightArg = "2350", topArg = "85", leftArg = "45"] = process.argv.slice(2);
+const [sourcePath, outputPath, subjectHeightArg = "2350", topArg = "85", leftArg = "45", backgroundArg = "opaque"] = process.argv.slice(2);
 if (!sourcePath || !outputPath) {
-  throw new Error("Usage: node scripts/process-speaker-cutout.mjs <source> <output> [subjectHeight] [top] [left]");
+  throw new Error("Usage: node scripts/process-speaker-cutout.mjs <source> <output> [subjectHeight] [top] [left] [opaque|transparent]");
 }
 
 const cardWidth = 1120;
@@ -10,7 +10,7 @@ const cardHeight = 1400;
 const subjectHeight = Number(subjectHeightArg);
 const top = Number(topArg);
 const leftOffset = Number(leftArg);
-const background = { r: 18, g: 14, b: 9, alpha: 1 };
+const background = { r: 18, g: 14, b: 9, alpha: backgroundArg === "transparent" ? 0 : 1 };
 
 const sourceMetadata = await sharp(sourcePath).metadata();
 const croppedSource = sourceMetadata.width === 1024 && sourceMetadata.height === 1536
@@ -52,11 +52,12 @@ const visibleSubject = await sharp(subject)
   .png()
   .toBuffer();
 
-await sharp({ create: { width: cardWidth, height: cardHeight, channels: 4, background } })
+const output = sharp({ create: { width: cardWidth, height: cardHeight, channels: 4, background } })
   .composite([{ input: visibleSubject, left: Math.max(0, left), top: Math.max(0, top) }])
-  .removeAlpha()
   .sharpen({ sigma: 0.45 })
-  .webp({ quality: 88 })
-  .toFile(outputPath);
+  .webp({ quality: 88 });
+
+if (backgroundArg !== "transparent") output.removeAlpha();
+await output.toFile(outputPath);
 
 console.log(`Processed cutout ${subjectWidth}x${subjectHeight} at (${left}, ${top})`);

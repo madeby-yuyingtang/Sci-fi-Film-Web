@@ -59,7 +59,7 @@ export const GROUPS: Group[] = [
       { name: "Xiaojuan Ma", role: "Associate Professor of Computer Science · Program Director in AI and Entrepreneurship", affiliation: "The Hong Kong University of Science and Technology", link: "https://cse.hkust.edu.hk/admin/people/faculty/profile/mxj", photo: "images/people/xiaojuan-ma.jpg?v=6" },
       { name: "Sebastian Deterding", role: "Chair in Design Engineering, Pioneer in Gameful Design & Gamification & Computational Creativity", affiliation: "Imperial College London", link: "https://profiles.imperial.ac.uk/s.deterding", photo: "images/people/sebastian-deterding.jpg?v=6" },
       { name: "Rebecca Fiebrink", role: "Professor of Creative Computing, Pioneer in Interactive Machine Learning for Creative Practice", affiliation: "University of the Arts London", link: "https://www.arts.ac.uk/creative-computing-institute/people/rebecca-fiebrink", photo: "images/people/rebecca-fiebrink.jpg?v=6" },
-      { name: "Malak Sadek", role: "MPhil Deputy Director & Teaching Associate · Centre for Human-Inspired AI", affiliation: "University of Cambridge", link: "https://www.malaksadek.com/", photo: "images/people/malak-sadek.jpg", photoFilter: "grayscale(1) sepia(0.65)", photoPosition: "50% 40%" },
+      { name: "Malak Sadek", role: "MPhil Deputy Director & Teaching Associate · Centre for Human-Inspired AI", affiliation: "University of Cambridge", link: "https://www.malaksadek.com/", photo: "images/people/malak-sadek-amber.webp?v=2" },
       { name: "Yulong Bian", role: "ACM China Rising Star Awardee · Executive Committee Member, ACM SIGCHI China", affiliation: "Nanyang Technological University", link: "https://ieeexplore.ieee.org/author/37085666170", photo: "images/people/yulong-bian.jpg?v=6" },
     ],
   },
