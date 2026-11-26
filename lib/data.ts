@@ -127,7 +127,7 @@ export interface Institution {
 }
 
 // Order: five lead institutions first (HKUST → IC → UAL → MSRA → HKU), then the rest.
-export const INSTITUTIONS: Institution[
+export const INSTITUTIONS: Institution[] = [
   { name: "The Hong Kong University of Science and Technology", logo: "logos/hkust-c.png", featured: true },
   { name: "Imperial College London", logo: "logos/imperial-c.png", featured: true },
   { name: "University of the Arts London", logo: "logos/ual-c.png", featured: true },
