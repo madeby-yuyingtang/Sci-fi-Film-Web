@@ -21,7 +21,7 @@ export default function Hero({ previewFont, previewWeight, previewStretch }: { p
 
         <div className="mt-[clamp(0.333rem,0.667vh,0.5rem)]">
           <h1 className="display display-xl max-w-none" style={{ lineHeight: 1.04, fontSize: "clamp(2.45rem, 8vw, 6.2rem)", letterSpacing: "0em", fontFamily: previewFont ?? "var(--font-display-stack)", fontWeight: previewWeight, fontStretch: previewStretch }}>
-            A Global Community Of Creators Exploring{" "}
+            A Global Community of Creators Exploring{" "}
             <span className="text-[var(--amber)]">Science × Art × AI</span>
           </h1>
           <p className="mt-6 max-w-[46ch] font-display text-[1rem] font-medium leading-snug text-[var(--muted)] sm:mt-8 sm:text-[1.4rem]">
