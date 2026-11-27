@@ -23,10 +23,34 @@ const mono = IBM_Plex_Mono({
   display: "swap",
 });
 
+const siteTitle = "FUTURE CIVILIZATION";
+const siteDescription = "A global community of creators exploring Science × Art × AI";
+const shareImage = {
+  url: "/images/future-civilization-share.png",
+  width: 1280,
+  height: 720,
+  alt: "FUTURE CIVILIZATION — A global community of creators exploring Science × Art × AI",
+};
+
 export const metadata: Metadata = {
-  title: "FUTURE CIVILIZATION",
-  description:
-    "A research-led interdisciplinary workshop exploring how generative AI can support science fiction storytelling, filmmaking, and scientific inquiry. Create the Future. Tell the Story.",
+  metadataBase: new URL("https://ai-creative-study.click"),
+  title: siteTitle,
+  description: siteDescription,
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://ai-creative-study.click/",
+    siteName: siteTitle,
+    title: siteTitle,
+    description: siteDescription,
+    images: [shareImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: [shareImage],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
