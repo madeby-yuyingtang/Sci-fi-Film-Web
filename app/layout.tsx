@@ -27,9 +27,9 @@ const siteTitle = "FUTURE CIVILIZATION";
 const siteDescription = "A Global Community of Creators Exploring Science × Art × AI";
 const shareTitle = `${siteTitle}: ${siteDescription}`;
 const shareImage = {
-  url: "/images/future-civilization-share-v2.png",
-  width: 1280,
-  height: 720,
+  url: "/images/future-civilization-share-v3.png",
+  width: 1200,
+  height: 630,
   alt: "FUTURE CIVILIZATION — A Global Community of Creators Exploring Science × Art × AI",
 };
 
