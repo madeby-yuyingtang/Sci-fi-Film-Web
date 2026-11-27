@@ -4,9 +4,9 @@ import { useEffect, useState } from "react";
 import Hero from "./Hero";
 
 const fonts = [
-  { name: "Outfit · 当前首页", family: "var(--font-hero)" },
+  { name: "Outfit · 圆润", family: "var(--font-hero)" },
   { name: "IBM Plex Sans", family: "var(--font-sans-stack)" },
-  { name: "Archivo · 原版", family: "var(--font-display-stack)" },
+  { name: "Archivo · 当前首页", family: "var(--font-display-stack)" },
   { name: "Archivo Expanded · 宽扁", family: "Archivo Preview Expanded", google: "Archivo:wdth,wght@125,700", source: "Archivo", stretch: "125%" },
   { name: "Michroma · 宽扁科技感", family: "Michroma", google: "Michroma", weight: 400 },
   { name: "Syncopate · 宽扁几何", family: "Syncopate", google: "Syncopate:wght@700" },
