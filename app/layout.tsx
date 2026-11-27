@@ -24,30 +24,31 @@ const mono = IBM_Plex_Mono({
 });
 
 const siteTitle = "FUTURE CIVILIZATION";
-const siteDescription = "A global community of creators exploring Science × Art × AI";
+const siteDescription = "A Global Community of Creators Exploring Science × Art × AI";
+const shareTitle = `${siteTitle}: ${siteDescription}`;
 const shareImage = {
-  url: "/images/future-civilization-share.png",
+  url: "/images/future-civilization-share-v2.png",
   width: 1280,
   height: 720,
-  alt: "FUTURE CIVILIZATION — A global community of creators exploring Science × Art × AI",
+  alt: "FUTURE CIVILIZATION — A Global Community of Creators Exploring Science × Art × AI",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ai-creative-study.click"),
-  title: siteTitle,
+  title: shareTitle,
   description: siteDescription,
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://ai-creative-study.click/",
     siteName: siteTitle,
-    title: siteTitle,
+    title: shareTitle,
     description: siteDescription,
     images: [shareImage],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteTitle,
+    title: shareTitle,
     description: siteDescription,
     images: [shareImage],
   },
