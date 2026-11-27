@@ -2,7 +2,7 @@
 
 export default function Hero({ previewFont, previewWeight, previewStretch }: { previewFont?: string; previewWeight?: number; previewStretch?: string } = {}) {
   return (
-    <section id="top" className="relative z-10 flex min-h-[100svh] flex-col justify-center px-[var(--gutter)] pb-8 pt-20 max-sm:pb-6 max-sm:pt-24">
+    <section id="top" className="relative z-10 mx-auto w-full max-w-[var(--maxw)] flex min-h-[100svh] flex-col justify-center px-[var(--gutter)] pb-8 pt-20 max-sm:pb-6 max-sm:pt-24">
       <div className="mx-auto w-full max-w-[var(--maxw)]">
         <div className="border-b border-[var(--line)] pb-3">
           <span

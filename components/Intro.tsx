@@ -17,7 +17,7 @@ export default function Intro() {
           <p className="mt-7 font-display text-[clamp(1.3rem,2.5vw,2rem)] leading-tight text-[var(--amber)]">
             Bridging Academia and Creative Industries
           </p>
-          <p className="mt-7 max-w-[90ch] text-[clamp(1rem,1.5vw,1.2rem)] leading-relaxed text-[var(--muted)]">
+          <p className="mt-7 text-[clamp(1rem,1.5vw,1.2rem)] leading-relaxed text-[var(--muted)]">
             A global, research-led interdisciplinary initiative where scientific
             discovery, artistic imagination, and artificial intelligence converge
             to advance human–AI co-creation, creative innovation, and
@@ -59,7 +59,7 @@ export default function Intro() {
                   </span>
                   <div>
                     <h4 className="font-display text-xl font-medium leading-snug sm:text-2xl">{item.title}</h4>
-                    <p className="mt-3 max-w-[90ch] leading-relaxed text-[var(--muted)]">{item.description}</p>
+                    <p className="mt-3 leading-relaxed text-[var(--muted)]">{item.description}</p>
                   </div>
                 </Reveal>
               </li>
@@ -90,7 +90,7 @@ export default function Intro() {
             <p className="mt-5 font-display text-[clamp(1rem,1.6vw,1.35rem)] text-[var(--amber)]">
               Human–AI Sci-Fi Filmmaking · Global Co-Creation
             </p>
-            <p className="lede mt-6 max-w-[80ch]">
+            <p className="lede mt-6 max-w-none">
               Bringing together science, cinema, and artificial intelligence, our
               2026–2027 flagship project invites creators worldwide to envision
               possible futures through human–AI co-creation.
@@ -99,7 +99,7 @@ export default function Intro() {
             <div className="mt-10 border-l border-[var(--amber)] pl-5">
               <h4 className="code">THE CREATIVE BRIEF</h4>
               <p className="mt-4 italic text-[var(--fg)]">Jupiter System, 2050</p>
-              <p className="mt-4 max-w-[80ch] leading-relaxed text-[var(--muted)]">
+              <p className="mt-4 max-w-none leading-relaxed text-[var(--muted)]">
                 Humanity is exploring Jupiter and its icy moons. During a new
                 mission to the Jovian system, researchers detect an anomalous
                 signal...What unfolds next is yet to be imagined.

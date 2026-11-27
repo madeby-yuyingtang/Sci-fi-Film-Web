@@ -96,7 +96,7 @@ body::after {
   color: var(--muted);
   font-size: clamp(1rem, 1.35vw, 1.16rem);
   line-height: 1.66;
-  max-width: 60ch;
+  max-width: none;
 }
 
 .rule { height: 1px; width: 100%; background: var(--line); }

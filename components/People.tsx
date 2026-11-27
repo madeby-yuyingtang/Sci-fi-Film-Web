@@ -43,11 +43,7 @@ function Card({ p }: { p: Person }) {
       <figcaption className="mt-2.5 sm:mt-3">
         <NameTag {...nameProps}>
           {p.name}
-          {p.link && (
-            <svg className="ml-1 inline-block -translate-y-px" width="9" height="9" viewBox="0 0 10 10" fill="none">
-              <path d="M2.5 7.5L7.5 2.5M3.5 2.5h4v4" stroke="currentColor" strokeWidth="1.1" />
-            </svg>
-          )}
+
         </NameTag>
         <p className="mt-1 text-[0.72rem] leading-snug text-[var(--muted)] sm:text-[0.8rem]">{p.role}</p>
         {p.affiliation && (
@@ -89,7 +85,7 @@ export default function People() {
             )}
             {g.eventTitle && (
               <Reveal className="mb-5">
-                <h4 className="max-w-[48ch] font-display text-xl font-semibold leading-snug text-[var(--fg)] sm:text-2xl">{g.eventTitle}</h4>
+                <h4 className="font-display text-xl font-semibold leading-snug text-[var(--fg)] sm:text-2xl">{g.eventTitle}</h4>
               </Reveal>
             )}
             {g.description && (
